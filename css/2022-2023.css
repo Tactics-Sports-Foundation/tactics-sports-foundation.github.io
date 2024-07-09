@@ -1,0 +1,118 @@
+/* Achievements */
+.acheivements {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.acheive-card {
+    border: 1px solid #f7f7f7;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "head" "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.card-head {
+    grid-area: head;
+}
+
+.card-head h2 {
+    grid-column: 1 / -1; /* Span across all columns */
+    color: #292929;
+}
+
+.card-head h2 span {
+    color: #ff671f;
+}
+
+.card-head .para {
+    grid-column: 1 / -1; /* Span across all columns */
+    color: #434343;
+    text-indent: 50px;
+    text-align: justify;
+    font-size: large;
+    font-weight: 500;
+}
+
+.card-content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 2 columns by default */
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+.card-content .profile-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    background-color: #494949;
+    color: #f7f7f7;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.profile-image {
+    display: flex;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-image img {
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .acheivements {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr 1fr; /* 2 columns for tablet view */
+    }
+
+    .profile-card {
+        grid-template-columns: 1fr; /* Stack content vertically for tablet view */
+    }
+
+    .profile-image img {
+        border-radius: 10px 10px 0 0; /* Adjust border radius for stacked view */
+    }
+}
+
+@media (max-width: 767px) {
+    .acheivements {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr; /* 1 column for mobile view */
+    }
+
+    .profile-card {
+        grid-template-columns: 1fr; /* Stack content vertically for mobile view */
+    }
+
+    .profile-image img {
+        border-radius: 10px 10px 0 0; /* Adjust border radius for stacked view */
+    }
+}

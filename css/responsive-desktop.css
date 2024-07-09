@@ -1,0 +1,118 @@
+/* Desktop styles */
+@media (min-width: 1024px) {
+
+    .container {
+        grid-template-areas:
+            "header header header"
+            "navbar navbar navbar"
+            "content1 content2 sidebar"
+            "content3 content4 sidebar"
+            "content5 content5 sidebar"
+            "content6 content6 sidebar"
+            "footer footer footer"
+            "copywrite copywrite copywrite";
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content1 {
+        grid-area: content1;
+    }
+
+    .content2 {
+        grid-area: content2;
+    }
+
+    .content3 {
+        grid-area: content3;
+    }
+
+    .content4 {
+        grid-area: content4;
+    }
+
+    .content5 {
+        grid-area: content5;
+    }
+
+    .content6 {
+        grid-area: content6;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+    .copywrite{
+        grid-area: copywrite;
+    }
+
+
+/* Header */
+
+/* Toggle bar */
+.toggle-bar {
+    visibility: hidden;
+}
+
+
+/* about us */
+
+.about-container {
+    grid-template-areas:
+        "abheader abheader abheader abheader"
+        "abnavbar abnavbar abnavbar abnavbar"
+        "aboutimage aboutimage aboutus aboutus"
+        "ourteam ourteam ourteam ourteam"
+        "visionmissionvalues visionmissionvalues visionmissionvalues visionmissionvalues"
+        "abfooter abfooter abfooter abfooter"
+        "abcopywrite abcopywrite abcopywrite abcopywrite";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.about-header { grid-area: abheader ;}
+.about-navbar { grid-area: abnavbar ;}
+.about-image { grid-area: aboutimage ;}
+.about-content { grid-area: aboutus ;}
+.our-team { grid-area: ourteam ;}
+.about-v-m-v { grid-area: visionmissionvalues ;}
+.about-footer { grid-area: abfooter ;}
+.about-copywrite { grid-area: abcopywrite ;}
+
+
+/* Acheivements */
+
+.acheive-container {
+    grid-template-areas:
+        "acheader"
+        "acnavbar"
+        "acheive"
+        "acfooter"
+        "accopywrite";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.acheive-header { grid-area: acheader ;}
+.acheive-navbar { grid-area: acnavbar ;}
+.acheivements { grid-area: acheive ;}
+.acheive-footer { grid-area: acfooter ;}
+.acheive-copywrite { grid-area: accopywrite ;}
+
+
+}

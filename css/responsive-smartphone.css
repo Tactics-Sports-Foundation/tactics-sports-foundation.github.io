@@ -1,0 +1,481 @@
+/* Smartphone styles (landscape and portrait) */
+
+
+@media (max-width: 767px) {
+
+    .container {
+        grid-template-areas:
+            "header"
+            "navbar"
+            "content1"
+            "content2"
+            "content3"
+            "content4"
+            "content5"
+            "content6"
+            "sidebar"
+            "footer"
+            "copywrite";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .navbar {
+        grid-area: navbar;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .content1 {
+        grid-area: content1;
+    }
+
+    .content2 {
+        grid-area: content2;
+    }
+
+    .content3 {
+        grid-area: content3;
+    }
+
+    .content4 {
+        grid-area: content4;
+    }
+
+    .content5 {
+        grid-area: content5;
+    }
+
+    .content6 {
+        grid-area: content6;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+    .copywrite{
+        grid-area: copywrite;
+    }
+
+
+
+/* Header */
+
+
+    /* Toggle icon */
+    .toggle-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toggle-bar .icon {
+        background: none;
+        border: none;
+        font-size: 50px;
+        cursor: pointer;
+        color: #1fb7ff;
+    }
+
+    .toggle-bar .icon:focus {
+        outline: none;
+    }
+
+    /* Menu when toggled */
+    .navbar #myLinks {
+        display: none;
+        position: absolute;
+        top: 10px; /* Adjust as necessary */
+        right: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 200px; /* Adjust width as necessary */
+    }
+
+    .navbar #myLinks a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #1fb7ff;
+    }
+
+    .navbar #myLinks a:hover {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    /* Active state */
+    .navbar .active {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    .navbar a.icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-color: #ffffff;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .navbar a.icon:hover {
+        background-color: #ffffff;
+        color: #1fb7ff;
+    }
+
+
+    .content5 ul{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .content6 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Four columns with equal width */
+        gap: 10px;
+    }
+
+    .footer-1 {
+        grid-template-columns: 1fr; /* Adjusting to a single column on mobile */
+    }
+
+    .footer-logo,
+    .navlink-list,
+    .address {
+        border-right: none; /* Removing border-right for better alignment on mobile */
+        padding-bottom: 10px; /* Adding padding for spacing */
+        border-bottom: 1px solid #ffffff;
+    }
+    .navlink-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .social-footer {
+        flex-direction: row; /* Aligning social icons horizontally on mobile */
+        justify-content: center; /* Centering social icons on mobile */
+    }
+
+    .social-footer i {
+        font-size: 30px; /* Adjusting size of social icons on mobile */
+    }
+
+
+        /* about us */
+
+.about-container {
+    grid-template-areas:
+        "abheader"
+        "abnavbar"
+        "aboutimage"
+        "aboutus"
+        "ourteam"
+        "visionmissionvalues"
+        "abfooter"
+        "abcopywrite";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+.about-header { grid-area: abheader ;}
+.about-navbar { grid-area: abnavbar ;}
+.about-image { grid-area: aboutimage ;}
+.about-content { grid-area: aboutus ;}
+.our-team { grid-area: ourteam ;}
+.about-v-m-v { grid-area: visionmissionvalues ;}
+.about-footer { grid-area: abfooter ;}
+.about-copywrite { grid-area: abcopywrite ;}
+
+
+/* Header */
+
+
+    /* Toggle icon */
+    .toggle-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toggle-bar .icon {
+        background: none;
+        border: none;
+        font-size: 50px;
+        cursor: pointer;
+        color: #1fb7ff;
+    }
+
+    .toggle-bar .icon:focus {
+        outline: none;
+    }
+
+    /* Menu when toggled */
+    .about-navbar #myLinks {
+        display: none;
+        position: absolute;
+        top: 10px; /* Adjust as necessary */
+        right: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 200px; /* Adjust width as necessary */
+    }
+
+    .about-navbar #myLinks a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #1fb7ff;
+    }
+
+    .about-navbar #myLinks a:hover {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    /* Active state */
+    .about-navbar .active {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    .about-navbar a.icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-color: #ffffff;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .about-navbar a.icon:hover {
+        background-color: #ffffff;
+        color: #1fb7ff;
+    }
+
+
+
+    .our-team {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-areas:
+            "team"
+            "para"
+            "raj"
+            "laks"
+            "nave"
+            "ram"
+            "vig"
+            "sri";
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .our-team h2,
+    .our-team .para {
+        grid-column: 1 / -1; /* Span across all columns */
+        text-align: center;
+    }
+
+    .profile-card {
+        margin-bottom: 20px; /* Space between profile cards */
+    }
+
+    .about-v-m-v .card-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-v-m-v .card {
+        width: 90%; /* Full width for each card on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .about-footer .footer-1 {
+        grid-template-columns: 1fr; /* Adjusting to a single column on mobile */
+    }
+
+    .about-footer .footer-logo,
+    .about-footer .navlink-list,
+    .about-footer .address {
+        border-right: none; /* Removing border-right for better alignment on mobile */
+        padding-bottom: 10px; /* Adding padding for spacing */
+        border-bottom: 1px solid #ffffff;
+    }
+    .about-footer .navlink-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .about-footer .social-footer {
+        flex-direction: row; /* Aligning social icons horizontally on mobile */
+        justify-content: center; /* Centering social icons on mobile */
+    }
+
+    .about-footer .social-footer i {
+        font-size: 30px; /* Adjusting size of social icons on mobile */
+    }
+
+
+
+/* Acheivements */
+
+.acheive-container {
+    grid-template-areas:
+        "acheader"
+        "acnavbar"
+        "acheive"
+        "acfooter"
+        "accopywrite";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.acheive-header { grid-area: acheader ;}
+.acheive-navbar { grid-area: acnavbar ;}
+.acheivements { grid-area: acheive ;}
+.acheive-footer { grid-area: acfooter ;}
+.acheive-copywrite { grid-area: accopywrite ;}
+
+/* Header */
+
+
+    /* Toggle icon */
+    .toggle-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toggle-bar .icon {
+        background: none;
+        border: none;
+        font-size: 50px;
+        cursor: pointer;
+        color: #1fb7ff;
+    }
+
+    .toggle-bar .icon:focus {
+        outline: none;
+    }
+
+    /* Menu when toggled */
+    .acheive-navbar #myLinks {
+        display: none;
+        position: absolute;
+        top: 10px; /* Adjust as necessary */
+        right: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 200px; /* Adjust width as necessary */
+    }
+
+    .acheive-navbar #myLinks a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #1fb7ff;
+    }
+
+    .acheive-navbar #myLinks a:hover {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    /* Active state */
+    .acheive-navbar .active {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    .acheive-navbar a.icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-color: #ffffff;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .acheive-navbar a.icon:hover {
+        background-color: #ffffff;
+        color: #1fb7ff;
+    }
+
+    .acheive-footer .footer-1 {
+        grid-template-columns: 1fr; /* Adjusting to a single column on mobile */
+    }
+
+    .acheive-footer .footer-logo,
+    .acheive-footer .navlink-list,
+    .acheive-footer .address {
+        border-right: none; /* Removing border-right for better alignment on mobile */
+        padding-bottom: 10px; /* Adding padding for spacing */
+        border-bottom: 1px solid #ffffff;
+    }
+    .acheive-footer .navlink-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .acheive-footer .social-footer {
+        flex-direction: row; /* Aligning social icons horizontally on mobile */
+        justify-content: center; /* Centering social icons on mobile */
+    }
+
+    .acheive-footer .social-footer i {
+        font-size: 30px; /* Adjusting size of social icons on mobile */
+    }
+
+
+    /* Acheivements */
+
+      /* Place the timelime to the left */
+  .acheivements .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .acheivements .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .acheivements .container:nth-child(odd)::before {
+    left: 60px;
+    border: medium solid #FF671F;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FF671F transparent transparent;
+    }
+    .acheivements .container:nth-child(even)::before {
+        left: 60px;
+        border: medium solid #1fb7ff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #1fb7ff transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .acheivements .left::after, .acheivements .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .acheivements .right {
+    left: 0%;
+    }
+
+
+
+}
