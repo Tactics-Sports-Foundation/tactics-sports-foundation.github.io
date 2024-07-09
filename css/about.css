@@ -168,6 +168,10 @@ body
     display: block;
   }
 
+.show {
+    display: block;
+}
+
 .about-navbar .site-logo img {
     width: 200px;
 }

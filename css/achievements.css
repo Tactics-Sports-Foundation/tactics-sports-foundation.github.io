@@ -164,7 +164,9 @@ body
 .dropdown:hover .dropdown-content {
     display: block;
   }
-
+.show {
+    display: block;
+}
 .acheive-navbar .site-logo img {
     width: 200px;
 }

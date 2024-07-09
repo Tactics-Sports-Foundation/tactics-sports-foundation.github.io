@@ -168,9 +168,9 @@ body
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* .show {
+.show {
     display: block;
-} */
+}
 
 .site-logo img {
     width: 200px;
