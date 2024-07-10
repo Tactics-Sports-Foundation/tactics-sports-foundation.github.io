@@ -115,4 +115,25 @@
 .acheive-copywrite { grid-area: accopywrite ;}
 
 
+/* Events */
+
+.events-container {
+    grid-template-areas:
+        "evheader"
+        "evnavbar"
+        "evheive"
+        "evfooter"
+        "evcopywrite";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.events-header { grid-area: evheader ;}
+.events-navbar { grid-area: evnavbar ;}
+.events-main { grid-area: evheive ;}
+.events-footer { grid-area: evfooter ;}
+.events-copywrite { grid-area: evcopywrite ;}
+
+
 }

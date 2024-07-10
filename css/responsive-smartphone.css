@@ -478,4 +478,134 @@
 
 
 
+
+/* Events */
+
+.events-container {
+    grid-template-areas:
+        "evheader"
+        "evnavbar"
+        "evheive"
+        "evfooter"
+        "evcopywrite";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+.events-header { grid-area: evheader ;}
+.events-navbar { grid-area: evnavbar ;}
+.events-main { grid-area: evheive ;}
+.events-footer { grid-area: evfooter ;}
+.events-copywrite { grid-area: evcopywrite ;}
+
+/* Header */
+
+
+    /* Toggle icon */
+    .toggle-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .toggle-bar .icon {
+        background: none;
+        border: none;
+        font-size: 50px;
+        cursor: pointer;
+        color: #1fb7ff;
+    }
+
+    .toggle-bar .icon:focus {
+        outline: none;
+    }
+
+    /* Menu when toggled */
+    .events-navbar #myLinks {
+        display: none;
+        position: absolute;
+        top: 10px; /* Adjust as necessary */
+        right: 20px;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        width: 200px; /* Adjust width as necessary */
+    }
+
+    .events-navbar #myLinks a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #1fb7ff;
+    }
+
+    .events-navbar #myLinks a:hover {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    /* Active state */
+    .events-navbar .active {
+        background-color: #ff671f;
+        color: #ffffff;
+    }
+
+    .events-navbar a.icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background-color: #ffffff;
+        padding: 10px;
+        z-index: 2;
+    }
+
+    .events-navbar a.icon:hover {
+        background-color: #ffffff;
+        color: #1fb7ff;
+    }
+
+    .events-footer .footer-1 {
+        grid-template-columns: 1fr; /* Adjusting to a single column on mobile */
+    }
+
+    .events-footer .footer-logo,
+    .events-footer .navlink-list,
+    .events-footer .address {
+        border-right: none; /* Removing border-right for better alignment on mobile */
+        padding-bottom: 10px; /* Adding padding for spacing */
+        border-bottom: 1px solid #ffffff;
+    }
+    .events-footer .navlink-list{
+        display: flex;
+        align-items: center;
+    }
+
+    .events-footer .social-footer {
+        flex-direction: row; /* Aligning social icons horizontally on mobile */
+        justify-content: center; /* Centering social icons on mobile */
+    }
+
+    .events-footer .social-footer i {
+        font-size: 30px; /* Adjusting size of social icons on mobile */
+    }
+
+
+
+/* Events Main */
+
+.events-main{
+    display: grid;
+    grid-template-areas: "his" "e1";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+    text-align: center;
+}
+.header-image-slide{
+    grid-area: his;
+}
+
+
+
 }
