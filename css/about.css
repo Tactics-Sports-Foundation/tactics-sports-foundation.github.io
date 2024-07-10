@@ -83,8 +83,8 @@ body
 
 .about-navbar {
     display: grid;
-    grid-template-areas: "logo menu";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo menu togg";
+    grid-template-columns: 1fr 15fr 1fr;
     grid-template-rows: auto;
     background-color: #ffffff;
     /* border: 5px solid #ffffff;
@@ -106,9 +106,10 @@ body
 }
 
 .about-navbar .menu-bar {
+    grid-area: menu;
     display: flex;
-    gap: 10px;
-    justify-content: flex-start;
+    gap: 50px;
+    justify-content: flex-end;
     align-items: center;
 }
 
