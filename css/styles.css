@@ -203,7 +203,7 @@ body
 .content1 p {
     color: #434343;
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
 }
@@ -512,7 +512,7 @@ body
 
   .content3 ul li .descr {
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
   }
@@ -624,7 +624,7 @@ body
 
   .content4 ul li .descr {
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
   }

@@ -234,7 +234,7 @@ body
 .about-content p {
     color: #434343;
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
 }
@@ -268,7 +268,7 @@ body
     grid-column: 1 / -1; /* Span across all columns */
     color: #434343;
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
 }
@@ -313,7 +313,7 @@ body
 .about-v-m-v p {
     color: #434343;
     text-indent: 50px;
-    text-align: justify;
+    text-align: left;
     font-size: large;
     font-weight: 500;
 }
