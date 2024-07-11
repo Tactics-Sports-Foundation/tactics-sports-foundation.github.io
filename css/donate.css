@@ -1,0 +1,303 @@
+/* Global Styles */
+.donate-us {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #007bff; /* Blue primary color */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Donation Options Styles */
+.donation-options {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 40px;
+}
+
+.donation-options h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.donation-options p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+.donation-option img{
+    width: 515px;
+    height: 300px;
+}
+
+.donation-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.donation-option {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.donation-option h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.donation-option p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.donation-option .instructions {
+    margin-top: 10px;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+span{
+    color: #ff671f;
+}
+
+/* Impact Stories Styles */
+.impact-stories {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.impact-stories h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.impact-stories p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.impact-stories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.impact-stories li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.impact-stories li i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Tax Information Styles */
+.tax-information {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 40px;
+}
+
+.tax-information h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tax-information p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tax-information .exemption-info {
+    background-color: #f0f8ff; /* Pale blue background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.tax-information .exemption-info h3 {
+    font-size: 1.8rem;
+    color: #007bff; /* Blue primary color */
+    margin-bottom: 10px;
+}
+
+.tax-information .exemption-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Contact Information Styles */
+.contact-information {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.contact-information h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-information p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-information ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-information li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-information li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-information li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles for Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .donate-us {
+        width: 95%;
+    }
+
+    .donation-options, .impact-stories, .tax-information, .contact-information {
+        padding: 20px;
+    }
+
+    .donation-options h2, .impact-stories h2, .tax-information h2, .contact-information h2 {
+        font-size: 2rem;
+    }
+
+    .donation-options p, .impact-stories p, .tax-information p, .contact-information p {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Styles for Smartphones (up to 767px) */
+@media (max-width: 767px) {
+    .donate-us {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .donation-options, .impact-stories, .tax-information, .contact-information {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .donation-options h2, .impact-stories h2, .tax-information h2, .contact-information h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .donation-options p, .impact-stories p, .tax-information p, .contact-information p {
+        font-size: 1rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input[type="number"], select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

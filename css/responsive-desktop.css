@@ -136,4 +136,15 @@
 .events-copywrite { grid-area: evcopywrite ;}
 
 
+#main-donate{
+    background-color: #1fb7ff;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+#main-donate:hover{
+    background-color: #ff671f;
+}
+
+
 }
