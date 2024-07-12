@@ -245,7 +245,7 @@ body
   overflow: hidden;
 }
 .content2 .gallery {
-  --d: 10s; /* duration */
+  --d: 16s; /* duration */
   
   display: grid;
   width: 100%;
