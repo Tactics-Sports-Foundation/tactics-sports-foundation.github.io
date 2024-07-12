@@ -58,6 +58,9 @@
     .copywrite{
         grid-area: copywrite;
     }
+    .content2 .gallery {
+        margin-left: 50px;
+    }
 
 
 /* Header */

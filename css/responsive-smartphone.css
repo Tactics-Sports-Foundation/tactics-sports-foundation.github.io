@@ -169,6 +169,12 @@
         font-size: 30px; /* Adjusting size of social icons on mobile */
     }
 
+    .content2 .gallery {
+        margin-left: 50px;
+    }
+    .content2 .gallery > img {
+        width: 80%; /* Full width for smaller screens */
+      }
 
         /* about us */
 

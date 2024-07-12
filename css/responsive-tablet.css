@@ -60,7 +60,12 @@
     .copywrite{
         grid-area: copywrite;
     }
-
+    .content2 .gallery {
+        margin-left: 50px;
+    }
+    .content2 .gallery img{
+        width: 70%;
+    }
 
 /* Header */
 
@@ -130,6 +135,8 @@
 
 
     /*  */
+
+
 
 
     .content5 ul{
