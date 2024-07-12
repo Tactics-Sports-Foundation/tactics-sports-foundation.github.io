@@ -11,6 +11,7 @@ body
     height: 100vh;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -50,7 +51,7 @@ body
     grid-template-areas: "social contact";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    background-color: #ff671f;
+    background-color: #292929;
     /* border: 5px solid #ff671f;
     border-radius: 10px;
     box-shadow: 0 0 4px #434343; */
@@ -74,7 +75,7 @@ body
 .header a {
     text-decoration: none;
     color: #ffffff;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .header a:hover {
@@ -88,7 +89,7 @@ body
     grid-template-areas: "logo menu togg";
     grid-template-columns: 1fr 15fr 1fr;
     grid-template-rows: auto;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     /* border: 5px solid #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 4px #434343; */
@@ -117,10 +118,10 @@ body
 
 .navbar a {
     text-decoration: none;
-    color: #1fb7ff;
+    color: #292929;
     font-weight: bold;
     padding: 10px;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .menu-bar a:hover {
@@ -152,11 +153,11 @@ body
 }
 
 .dropdown-content a {
-    color: #1fb7ff;
+    color: #292929;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .dropdown a:hover {
@@ -241,7 +242,7 @@ body
   margin: 0;
   display: grid;
   place-content: center;
-  background: #fff;
+  background: #f7f7f7;
   overflow: hidden;
 }
 .content2 .gallery {
@@ -335,8 +336,8 @@ body
     /* box-shadow: 0 0 4px #434343; */
     margin-top: 10px;
 }
-.sidebar h1{
-    color: #ff671f;
+.sidebar h2{
+    color: #292929;
     text-align: center;
 }
 
@@ -352,7 +353,7 @@ body
     border-radius: 10px;
     box-shadow: 0 0 4px #434343;
     color: #f5f5f5;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 .news-blog:hover{
     background-color: #f5f5f5;
@@ -378,7 +379,7 @@ body
 .our-partners{
   display: grid;
   place-items: center;
-  background: rgb(255, 255, 255);
+  background: rgb(254, 252, 255);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(7.4px);
@@ -434,7 +435,7 @@ body
 
 .content3 {
     --color: rgba(30, 30, 30);
-    --bgColor: rgba(255, 255, 255);
+    --bgColor: rgba(247,247,247);
     /* min-height: 100vh; */
     display: flex;
     justify-content: center;
@@ -525,7 +526,7 @@ body
   .content3 ul li .title,
   .content3 ul li .descr {
     padding-inline: 1rem;
-    color: white;
+    color: #292929;
     /* text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); */
   }
 
@@ -549,7 +550,7 @@ body
 
 .content4 {
     --color: rgba(30, 30, 30);
-    --bgColor: rgba(255, 255, 255);
+    --bgColor: rgba(247,247,247);
     /* min-height: 100vh; */
     display: flex;
     justify-content: center;
@@ -638,7 +639,7 @@ body
   .content4 ul li .title,
   .content4 ul li .descr {
     padding-inline: 1rem;
-    color: white;
+    color: #292929;
     /* text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); */
   }
 
@@ -662,7 +663,7 @@ body
 
   .content5 {
     --color: rgba(30, 30, 30);
-    --bgColor: rgba(245, 245, 245);
+    --bgColor: rgba(254, 252, 255);
     --accent-color: #FF5733; /* Assuming you have an accent color */
     display: grid;
     align-content: center;
@@ -672,9 +673,12 @@ body
     color: var(--color);
     background: var(--bgColor);
     box-sizing: border-box; /* Ensure padding is included in the width */
+    border-radius: 20px;
+    margin: 20px;
   }
   
   .content5 h2 {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: xx-large;
     font-weight: bolder;
@@ -711,7 +715,6 @@ body
     aspect-ratio: 1;
     display: grid;
     place-items: center;
-    color: white;
     font-size: 40px;
     border: 6.4px solid var(--bgColor);
     border-radius: 50%;
@@ -719,12 +722,20 @@ body
     box-shadow: -8px 8px 16px rgba(0, 0, 0, 0.45),
       inset -4px 4px 8px rgba(0, 0, 0, 0.45);
   }
+  .content5 ul li:nth-child(odd) .icon {
+    color: #f7f7f7;
+}
+
+.content5 ul li:nth-child(even) .icon {
+    color: #292929;
+}
   
   .content5 ul li::before {
     content: "";
     grid-area: line;
     height: 32px;
     border-right: 2px dotted currentColor;
+    color: #292929;
   }
   
   .content5 ul li::after {
@@ -733,9 +744,10 @@ body
     width: 16px;
     aspect-ratio: 1;
     border-radius: 50%;
-    background: var(--accent-color);
+    background: #292929;
     justify-self: center;
     margin-bottom: 8px;
+    color: #292929;
   }
   
   .content5 ul li .title {
@@ -756,7 +768,7 @@ body
 .content6 {
     /* background-color: rgba(245, 245, 245); */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Four columns with equal width */
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
     grid-template-rows: auto;
     gap: 20px; /* Adjust gap as needed */
     /* width: 95%; */
@@ -789,7 +801,7 @@ body
 /* Footer */
 
 .footer-logo img {
-    width: 250px;
+    width: 150px;
 }
 
 .footer{
@@ -816,13 +828,14 @@ body
 .footer-logo{
     display: flex;
     justify-content: center;
+    align-items: center;
     border-right: 1px solid #ffffff;
 }
 
 .footer a {
     text-decoration: none;
     color: #ffffff;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .footer a:hover {
@@ -830,21 +843,24 @@ body
 }
 .navlink-list{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     align-content: center;
     border-right: 1px solid #ffffff;
+    padding: 5px;
 
 }
 .address{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     align-content: center;
     color: #ffffff;
-    transition: 0.3s;
+    transition: all 0.3s;
     border-right: 1px solid #ffffff;
 
 }
@@ -862,7 +878,7 @@ body
 .footer-1 .social-footer i{
     font-size: 40px;
     color: #ffffff;
-    transition: 0.3s;
+    transition: all 0.3s;
 
 }
 .footer-1 .social-footer i:hover{
@@ -875,7 +891,7 @@ body
 .copywrite{
     display: flex;
     gap: 10px;
-    background-color: #ff671f;
+    background-color: #292929;
     /* border: 5px solid #ffffff; */
     /* border-radius: 10px; */
     padding: 5px;

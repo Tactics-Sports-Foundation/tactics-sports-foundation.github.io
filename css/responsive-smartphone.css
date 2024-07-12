@@ -93,7 +93,7 @@
         position: absolute;
         top: 10px; /* Adjust as necessary */
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         width: 200px; /* Adjust width as necessary */
@@ -108,13 +108,13 @@
 
     .navbar #myLinks a:hover {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     /* Active state */
     .navbar .active {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     .navbar a.icon {
@@ -122,13 +122,13 @@
         position: absolute;
         top: 10px;
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         padding: 10px;
         z-index: 2;
     }
 
     .navbar a.icon:hover {
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         color: #1fb7ff;
     }
 
@@ -145,28 +145,38 @@
     }
 
     .footer-1 {
-        grid-template-columns: 1fr; /* Adjusting to a single column on mobile */
+
+        grid-template-columns: repeat(1, 1fr); /* Adjusting to two columns on tablets */
     }
 
-    .footer-logo,
-    .navlink-list,
-    .address {
-        border-right: none; /* Removing border-right for better alignment on mobile */
-        padding-bottom: 10px; /* Adding padding for spacing */
-        border-bottom: 1px solid #ffffff;
-    }
-    .navlink-list{
+    .footer-logo {
         display: flex;
+        justify-content: center;
         align-items: center;
+        border-right: none;/* Removing border-right for better alignment on tablets */
+        padding-bottom: 10px; /* Adding padding for spacing */
+    }
+
+    .navlink-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: none; /* Removing border-right for better alignment on tablets */
+        padding-bottom: 10px; /* Adding padding for spacing */
+    }
+
+    .address {
+        border-right: none;/* Removing border-right for better alignment on tablets */
+        padding-bottom: 10px; /* Adding padding for spacing */
     }
 
     .social-footer {
-        flex-direction: row; /* Aligning social icons horizontally on mobile */
-        justify-content: center; /* Centering social icons on mobile */
+        justify-content: center; /* Centering social icons on tablets */
     }
 
     .social-footer i {
-        font-size: 30px; /* Adjusting size of social icons on mobile */
+        font-size: 30px; /* Adjusting size of social icons on tablets */
     }
 
     .content2 .gallery {
@@ -229,7 +239,7 @@
         position: absolute;
         top: 10px; /* Adjust as necessary */
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         width: 200px; /* Adjust width as necessary */
@@ -244,13 +254,13 @@
 
     .about-navbar #myLinks a:hover {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     /* Active state */
     .about-navbar .active {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     .about-navbar a.icon {
@@ -258,13 +268,13 @@
         position: absolute;
         top: 10px;
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         padding: 10px;
         z-index: 2;
     }
 
     .about-navbar a.icon:hover {
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         color: #1fb7ff;
     }
 
@@ -314,7 +324,7 @@
     .about-footer .address {
         border-right: none; /* Removing border-right for better alignment on mobile */
         padding-bottom: 10px; /* Adding padding for spacing */
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #f7f7f7;
     }
     .about-footer .navlink-list{
         display: flex;
@@ -379,7 +389,7 @@
         position: absolute;
         top: 10px; /* Adjust as necessary */
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         width: 200px; /* Adjust width as necessary */
@@ -394,13 +404,13 @@
 
     .acheive-navbar #myLinks a:hover {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     /* Active state */
     .acheive-navbar .active {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     .acheive-navbar a.icon {
@@ -408,13 +418,13 @@
         position: absolute;
         top: 10px;
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         padding: 10px;
         z-index: 2;
     }
 
     .acheive-navbar a.icon:hover {
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         color: #1fb7ff;
     }
 
@@ -427,7 +437,7 @@
     .acheive-footer .address {
         border-right: none; /* Removing border-right for better alignment on mobile */
         padding-bottom: 10px; /* Adding padding for spacing */
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #f7f7f7;
     }
     .acheive-footer .navlink-list{
         display: flex;
@@ -532,7 +542,7 @@
         position: absolute;
         top: 10px; /* Adjust as necessary */
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         width: 200px; /* Adjust width as necessary */
@@ -547,13 +557,13 @@
 
     .events-navbar #myLinks a:hover {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     /* Active state */
     .events-navbar .active {
         background-color: #ff671f;
-        color: #ffffff;
+        color: #f7f7f7;
     }
 
     .events-navbar a.icon {
@@ -561,13 +571,13 @@
         position: absolute;
         top: 10px;
         right: 20px;
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         padding: 10px;
         z-index: 2;
     }
 
     .events-navbar a.icon:hover {
-        background-color: #ffffff;
+        background-color: #f7f7f7;
         color: #1fb7ff;
     }
 
@@ -580,7 +590,7 @@
     .events-footer .address {
         border-right: none; /* Removing border-right for better alignment on mobile */
         padding-bottom: 10px; /* Adding padding for spacing */
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #f7f7f7;
     }
     .events-footer .navlink-list{
         display: flex;

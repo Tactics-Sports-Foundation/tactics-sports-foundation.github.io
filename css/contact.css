@@ -2,13 +2,13 @@
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #FEFCFF;
     text-align: center;
     padding: 1rem 0;
 }
 
 .contact-form, .contact-details, .map-section {
-    background-color: #fff;
+    background-color: #FEFCFF;
     margin: 20px auto;
     padding: 20px;
     max-width: 800px;
@@ -47,7 +47,7 @@ textarea {
 
 button {
     background-color: #333;
-    color: #fff;
+    color: #FEFCFF;
     border: none;
     padding: 12px 24px; /* Increased padding for button */
     cursor: pointer;
