@@ -6,6 +6,8 @@
             "header header header"
             "navbar navbar navbar"
             "content1 content2 sidebar"
+            "info-content info-content sidebar"
+            "content7 content7 sidebar"
             "content3 content4 sidebar"
             "content5 content5 sidebar"
             "content6 content6 sidebar"
@@ -35,6 +37,9 @@
     .content2 {
         grid-area: content2;
     }
+    .info-content{
+        grid-area: info-content;
+    }
 
     .content3 {
         grid-area: content3;
@@ -50,6 +55,9 @@
 
     .content6 {
         grid-area: content6;
+    }
+    .content7 {
+        grid-area: content7;
     }
 
     .footer {

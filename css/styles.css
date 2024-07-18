@@ -32,10 +32,12 @@ body
 .sidebar,
 .content1,
 .content2,
+.info-content,
 .content3,
 .content4,
 .content5,
 .content6,
+.content7,
 .footer,
 .copywrite {
     /* border: 1px solid #f7f7f7;
@@ -320,60 +322,199 @@ body
   93.75% {z-index: 2}
 }
 
+/* Info Content */
+
+.info-content {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.info-content h2{
+  color: #ff671f;
+}
+
+/* Latest News Section */
+.info-content .latest-news {
+  /* background-color: #e8f7ff; */
+  border: 3px solid #FEFCFF;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 2;
+  display: grid;
+  grid-template-areas: 
+      "infohead infohead"
+      "incon1 incon2"
+      "incon3 incon4";
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: auto; */
+  gap: 10px;
+}
+
+.info-content .latest-news .info-title {
+  grid-area: infohead;
+  color: #292929;
+  text-align: center;
+}
+
+.info-content .latest-news img {
+  width: 99.5%;
+  border: 1px solid #434343;
+  border-radius: 10px 10px 0 0;
+}
+
+.info-content .latest-news .news-blog {
+  background-color: #292929;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #434343;
+  color: #f5f5f5;
+  transition: all 0.3s;
+}
+
+.info-content .latest-news .news-blog:hover {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #292929;
+}
+
+.info-content .latest-news .news-blog .news-content {
+  margin: auto;
+}
+
+.info-content .latest-news .venue {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+/* Upcoming Events Section */
+.info-content .upcoming-events {
+  /* background-color: #e8f7ff; */
+  border: 3px solid #FEFCFF;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 2;
+  display: grid;
+  grid-template-areas: 
+      "upinfohead upinfohead"
+      "upincon1 upincon2";
+  /* grid-template-rows: auto; */
+  gap: 10px;
+}
+
+.info-content .upcoming-events .up-info-title {
+  grid-area: upinfohead;
+  color: #292929;
+  text-align: center;
+}
+
+.info-content .upcoming-events img {
+  width: 99.5%;
+  border: 1px solid #434343;
+  border-radius: 10px 10px 0 0;
+}
+
+.info-content .upcoming-events .news-blog {
+  background-color: #292929;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #434343;
+  color: #f5f5f5;
+  transition: all 0.3s;
+}
+
+.info-content .upcoming-events .news-blog:hover {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+  color: #292929;
+}
+
+.info-content .upcoming-events .news-blog .news-content {
+  margin: auto;
+}
+
+.info-content .upcoming-events .venue {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+
+
+
 /* Side Bar */
 
-.sidebar {
-    /* background-color: rgba(245, 245, 245); */
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: flex-start;
-    /* border-left: 5px solid #1fb7ff;
-    border-right: 5px solid #1fb7ff; */
-    /* border: 5px solid #ffffff; */
-    /* border-radius: 10px; */
-    /* background-color: #dcdcdc; */
-    /* box-shadow: 0 0 4px #434343; */
-    margin-top: 10px;
-}
-.sidebar h2{
-    color: #292929;
-    text-align: center;
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.sidebar img {
-    width: 99.5%;
-    border: 1px solid #434343;
-    border-radius: 10px 10px 0 0;
-}
-
-.news-blog {
-    background-color: #292929;
-    border: 1px solid #292929;
-    border-radius: 10px;
-    box-shadow: 0 0 4px #434343;
-    color: #f5f5f5;
-    transition: all 0.3s;
-}
-.news-blog:hover{
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5f5;
-    color: #292929;
+.our-sports{
+  display: grid;
+  place-items: center;
+  background: rgb(254, 252, 255);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px); */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: all 0.3s;
 
 }
 
-.news-blog .news-content {
-    margin: auto;
+.sports-marq {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.venue {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    display: flex;
-    gap: 5px;
-    justify-content: space-between;
-    padding: 5px;
+.sports-marq {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
 }
+
+.content-marq{
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.content-marq p {
+  margin: 0;
+  padding: 0;
+  color: #434343;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+.our-sports h2{
+  color: #ff671f;
+}
+
+
+@keyframes marquee {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
+}
+
+
+
+
 
 
 .our-partners{
@@ -394,8 +535,13 @@ body
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.4);
 
-
 }
+
+.our-partners h2{
+  color: #ff671f;
+}
+
+
 
 .our-partners .partner-slide {
   display: flex;
@@ -532,6 +678,8 @@ body
 
   .content3 ul li .icon {
     font-size: 4rem;
+        color: #ffffff;
+
   }
   .content3 ul li .title {
     font-size: xx-large;
@@ -645,6 +793,7 @@ body
 
   .content4 ul li .icon {
     font-size: 4rem;
+    color: #ffffff;
   }
   .content4 ul li .title {
     font-size: xx-large;
@@ -727,7 +876,7 @@ body
 }
 
 .content5 ul li:nth-child(even) .icon {
-    color: #292929;
+    color: #f7f7f7;
 }
   
   .content5 ul li::before {
@@ -795,6 +944,40 @@ body
     left: 0;
     border-radius: 10px;
 
+}
+
+
+/* Content 7 Counter */
+
+.content7 {
+  background-color: #f7f7f7;
+}
+
+.content7 .container {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.content7 .row{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content7 .col {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+.content7 .counter {
+  background-color: #FEFCFF;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+.content7 .count-title {
+  color: #ff671f;
+}
+.content7 .count-text {
+  color: #1fb7ff;
 }
 
 

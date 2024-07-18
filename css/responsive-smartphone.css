@@ -9,6 +9,8 @@
             "navbar"
             "content1"
             "content2"
+            "info-content"
+            "content7"
             "content3"
             "content4"
             "content5"
@@ -40,7 +42,9 @@
     .content2 {
         grid-area: content2;
     }
-
+    .info-content{
+        grid-area: info-content;
+    }
     .content3 {
         grid-area: content3;
     }
@@ -55,6 +59,9 @@
 
     .content6 {
         grid-area: content6;
+    }
+    .content7 {
+        grid-area: content7;
     }
 
     .footer {
@@ -92,7 +99,7 @@
         display: none;
         position: absolute;
         top: 10px; /* Adjust as necessary */
-        right: 20px;
+        right: 56px;
         background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -186,6 +193,39 @@
         width: 80%; /* Full width for smaller screens */
       }
 
+      .content7 .row {
+        flex-direction: row;
+      }
+    
+      .content7 .col {
+        flex: 1 1 50%; /* Each column will take up 50% of the width */
+        box-sizing: border-box;
+      }
+
+      .info-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .info-content .latest-news,
+      .info-content .upcoming-events {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "infohead"
+          "incon1"
+          "incon2"
+          "incon3"
+          "incon4";
+      }
+    
+      .info-content .upcoming-events {
+        grid-template-areas: 
+          "upinfohead"
+          "upincon1"
+          "upincon2";
+      }
+
         /* about us */
 
 .about-container {
@@ -238,7 +278,7 @@
         display: none;
         position: absolute;
         top: 10px; /* Adjust as necessary */
-        right: 20px;
+        right: 56px;
         background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -388,7 +428,7 @@
         display: none;
         position: absolute;
         top: 10px; /* Adjust as necessary */
-        right: 20px;
+        right: 56px;
         background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -541,7 +581,7 @@
         display: none;
         position: absolute;
         top: 10px; /* Adjust as necessary */
-        right: 20px;
+        right: 56px;
         background-color: #f7f7f7;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;

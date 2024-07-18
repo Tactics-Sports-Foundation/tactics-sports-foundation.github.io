@@ -7,6 +7,8 @@
             "header header"
             "navbar navbar"
             "content1 content2"
+            "info-content info-content"
+            "content7 content7"
             "content3 content4"
             "content5 content5"
             "content6 content6"
@@ -37,6 +39,9 @@
     .content2 {
         grid-area: content2;
     }
+    .info-content{
+        grid-area: info-content;
+    }
 
     .content3 {
         grid-area: content3;
@@ -52,6 +57,10 @@
 
     .content6 {
         grid-area: content6;
+    }
+    .content7{
+        grid-area: content7;
+
     }
 
     .footer {
@@ -150,6 +159,8 @@
         gap: 10px;
     }
 
+    
+
     .footer-1 {
 
         grid-template-columns: repeat(2, 1fr); /* Adjusting to two columns on tablets */
@@ -183,6 +194,27 @@
     .social-footer i {
         font-size: 30px; /* Adjusting size of social icons on tablets */
     }
+
+    .info-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .info-content .latest-news,
+      .info-content .upcoming-events {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+          "infohead infohead"
+          "incon1 incon2"
+          "incon3 incon4";
+      }
+    
+      .info-content .upcoming-events {
+        grid-template-areas: 
+          "upinfohead upinfohead"
+          "upincon1 upincon2";
+      }
 
 
 
